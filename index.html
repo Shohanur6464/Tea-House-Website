@@ -11,6 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+        <!-- font awesome  -->
+        <script src="https://kit.fontawesome.com/89d959d1a7.js" crossorigin="anonymous"></script>
+        <!-- customize style -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  }
+                }
+              }
+            }
+          </script>
+
+          <!-- style section -->
     <style>
         .font-manrope{
             font-family: 'Manrope', sans-serif;
@@ -18,7 +35,77 @@
     </style>
 </head>
 
-<body>
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row gap-24">
+              <div>
+                <h1 class="text-7xl font-extrabold">It's good <br> 
+                    tea time at The <br> Tea House</h1>
+                <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-primary text-white">Explore More</button>
+              </div>
+              <div>
+                <img src="/images/banner.png" class="max-w-sm" />
+                <div  class="-mt-20 mr-8 flex items-center gap-2 drop-shadow-lg bg-white p-5 w-56">
+                    <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+                    <div>
+                        <h3 class="text-3xl">5.00</h3>
+                        <p>Trust Pilot Rating</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <main class="container mx-auto">
+        <!-- featured section -->
+        <div class="container mx-auto">
+            <div class="container text-center py-10">
+                <h1 class="text-5xl font-extrabold">Our Featured Products</h1>
+                <p class="px-24 py-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            </div>
+        </div>
+        <!-- card container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- first card -->
+            <div class="card p-7 bg-gradient-to-r from-[#F4F4F4] to-[#f4f4f4] shadow-xl">
+                <figure><img src="/images/tea-1.png" alt="Shoes" /></figure>
+                <div class="card-body text-center">
+                  <h2 class="text-2xl font-extrabold">Milk Tea</h2>
+                  <p>Creamer could be replaced <br> by fresh milk</p>
+                </div>
+              </div>
+            <div class="card p-7 bg-gradient-to-r from-[#F4F4F4] to-[#f4f4f4] shadow-xl">
+                <figure><img src="/images/tea-2.png" alt="Shoes" /></figure>
+                <div class="card-body text-center">
+                  <h2 class="text-2xl font-extrabold">Black Tea</h2>
+                  <p>Creamer could be replaced <br> by fresh milkk</p>
+                </div>
+              </div>
+            <div class="card p-7 bg-gradient-to-r from-[#F4F4F4] to-[#f4f4f4] shadow-xl">
+                <figure><img src="/images/tea-3.png" alt="Shoes" /></figure>
+                <div class="card-body text-center">
+                  <h2 class="text-2xl font-extrabold">Lemon Tea</h2>
+                  <p>Creamer could be replaced <br> by fresh milk</p>
+                </div>
+              </div>
+            <div class="card p-7 bg-gradient-to-r from-[#F4F4F4] to-[#f4f4f4] shadow-xl">
+                <figure><img src="/images/tea-4.png" alt="Shoes" /></figure>
+                <div class="card-body text-center">
+                  <h2 class="text-2xl font-extrabold">Green Tea</h2>
+                  <p>Creamer could be replaced <br> by fresh milk</p>
+                </div>
+              </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
 
 </body>
 
